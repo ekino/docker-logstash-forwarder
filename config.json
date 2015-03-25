@@ -1,0 +1,15 @@
+{
+    "network": {
+        "servers": [ "__LUMBERJACK_ENDPOINT__" ],
+        "ssl strict verify": false,
+        "ssl certificate": "/etc/logstash/ssl/logstash-forwarder.crt",
+        "ssl key":         "/etc/logstash/ssl/logstash-forwarder.key",
+        "ssl ca":          "/etc/logstash/ssl/logstash-forwarder.crt"
+    },
+    "files": [
+        {
+            "paths":  [ "/var/log/supervisor/supervisord.log" ],
+            "fields": { "type": "supervisord" }
+        }
+    ]
+}
