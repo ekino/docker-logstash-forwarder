@@ -1,4 +1,4 @@
-# --- KIBANA ---
+# --- LOGSTASH-FORWARDER ---
 
 FROM ekino/base
 MAINTAINER Matthieu Fronton <fronton@ekino.com>
